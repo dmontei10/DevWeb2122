@@ -1,4 +1,4 @@
-module.exports= app =>{
+module.exports= app => {
     const crudrest = require("../controladores/pratica01.controller")
 
     var router = require("express").Router();
@@ -24,5 +24,5 @@ module.exports= app =>{
     //Create a new Tutorial
     router.delete("/", crudrest.deleteAll)
 
-    app.use('/api/crudrest/router')
+    app.use('/api/crudrest', router);
 }
