@@ -1,0 +1,23 @@
+{
+  "name": "pratica01-crud-rest",
+  "version": "1.0.0",
+  "description": "Exercício de Programação Web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Programação",
+    "Web",
+    "Rest",
+    "Javascript",
+    "Server",
+    "Client"
+  ],
+  "author": "David Monteiro",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
