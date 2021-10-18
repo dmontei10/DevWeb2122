@@ -1,7 +1,7 @@
 module.exports= app =>{
     const crudrest = require("../controladores/pratica01.controller")
 
-    var router =require("express").Router();
+    var router = require("express").Router();
 
     //Create a new Tutorials
     router.post("/", crudrest.create)
