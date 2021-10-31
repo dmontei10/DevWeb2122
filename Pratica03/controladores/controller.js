@@ -46,6 +46,11 @@ exports.update = (req, res) => {
 
 }
 
+//DELETE on - elimina o item com id recebido
+exports.delete = (req,res) => {
+    
+}
+
 //DELETE all - elimina todos os itens
 exports.deleteAll = (req,res) => {
 

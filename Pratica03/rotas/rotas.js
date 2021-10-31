@@ -10,7 +10,7 @@ module.exports = app => {
     router.get("/", controlador.findAll);
 
     //Retrieve all published Tutorials
-    router.get("/", controlador.findAllPublished);
+    router.get("/published", controlador.findAllPublished);
 
     //Retrieve a single Tutorial with id
     router.get("/:id", controlador.findOne);
