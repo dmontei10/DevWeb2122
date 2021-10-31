@@ -4,7 +4,7 @@ const app = express(); // Construtor que inicializa uma aplicação Express
 
 app.use(express.json()); // Faz o parse (validação e interpretação) de solicitações do tipo application/json
 
-app.use(express.urlencoded({extend: true})); // Faz o parse do conteúdo tipo application/x-www-form-urlenconded
+app.use(express.urlencoded({extended: true})); // Faz o parse do conteúdo tipo application/x-www-form-urlenconded
 
 app.get("/",(req,res) => { // Cria uma "rota" simples com o verbo GET do HTTP
     res.json({mensagem: "Bem_vindo à primeira apliacação CRUD-REST"})
