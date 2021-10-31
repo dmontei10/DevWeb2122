@@ -6,7 +6,7 @@ app.use = (express.json()); //Faz o parse (validação e interpretação) de sol
 
 app.use(express.urlencoded({ extend: true})); //Faz o parse do conteúdo tipo application/x-www-fora-urlencoded
 
-require(".rotas/rotas")(app);
+require("./rotas/rotas")(app);
 
 const PORTA = process.env.PORT || 8080; //Estabelece a porta do servidor
 
