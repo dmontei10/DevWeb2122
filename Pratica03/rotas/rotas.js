@@ -1,5 +1,5 @@
 module.exports = app => {
-    const controlador = require("../controladores/controller");
+    const controlador = require("../controladores/controller.js");
 
     var router = require("express").Router();
 
@@ -25,4 +25,4 @@ module.exports = app => {
     router.delete("/", controlador.deleteAll);
 
     app.use('/api/disciplinas', router);
-}
+};
