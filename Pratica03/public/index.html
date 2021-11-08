@@ -42,6 +42,25 @@
         </p>
       </article>
     </section>
+
+    <section>
+
+      <img src="images/lampoff.jpg"  id="lamp" onclick="changeLamp()">
+
+      <script>
+        function changeLamp(){
+          if(document.getElementById("lamp").getAttribute("src") == "images/lampoff.jpg"){
+            document.getElementById("lamp").setAttribute("src", "images/lampon.jpg");
+          }else{
+            document.getElementById("lamp").setAttribute("src", "images/lampoff.jpg");
+        }
+      }
+
+      </script>
+
+
+    </section>
+
     <footer>
       <p>&copy;2021 Laercio Cruvinel</p>
     </footer>
