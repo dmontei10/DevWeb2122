@@ -2,7 +2,7 @@ const express = require("express"); //Carrega o framework Express
 
 const app = express(); //Construtor que inicializa uma aplicação Express
 
-app.use = (express.json()); //Faz o parse (validação e interpretação) de solicitaçoes do tipo application/json
+app.use(express.json()); //Faz o parse (validação e interpretação) de solicitaçoes do tipo application/json
 
 app.use(express.urlencoded({extended:true})); //Faz o parse do conteúdo tipo application/x-www-fora-urlencoded
 
