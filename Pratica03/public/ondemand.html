@@ -16,6 +16,7 @@
       <!-- Conteúdo a ser injetado via JavaScript -->
     </div>
     <script src="js/ondemand.js"></script>
+    <script src="js/demandHtmlContent.js"></script>
     <div>
       <h2>Conteúdo do Javascript:</h2>
       <iframe
@@ -24,6 +25,16 @@
         height="420"
         frameborder="1"
       ></iframe>
+
+      <h2>Conteúdo HTML:</h2>
+      <iframe
+        id="iFrame"
+        onload="getContentHTML()"
+        width="800"
+        height="420"
+        frameborder="1"
+        >
+      </iframe>
     </div>
   </body>
 </html>
