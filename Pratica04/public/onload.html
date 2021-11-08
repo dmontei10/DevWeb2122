@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Fetch Async</title>
+</head>
+<body>
+    <h1>Teste Fetch Async</h1>
+
+    <div id="listaDisciplinas">
+        <!-- Conteúdo a ser injetado via JavaScript -->
+    </div>
+    <script src="js/onload.js"></script>
+    <script src="js/demandHtmlContent.js"></script>
+
+    <div>
+        <h2>Conteúdo do Javascript:</h2>
+        <iframe
+          src="js/onload.js"
+          width="800"
+          height="470"
+          frameborder="1"
+        ></iframe>
+
+        <h2>Conteúdo HTML:</h2>
+        <iframe
+          id="iFrame"
+          onload="getContentHtml()"
+          width="800"
+          height="420"
+          frameborder="1"
+         ></iframe>
+  
+      </div>
+  </body>
+</html>
